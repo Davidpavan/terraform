@@ -3,6 +3,6 @@ region = "us-east-2"
 version = "~> 3.61.0"
 }
 
-resource "aws_s3_bucket" "bucketzelar" {
+resource "aws_s3_bucket" "bucket_zelar" {
   bucket = "mybucket"
 }
