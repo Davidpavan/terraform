@@ -1,9 +1,10 @@
 terraform {
   backend "remote" {
-      organization = "terraform-learn-zelar"
-      workspaces {
-          name = "Example-workspace"
-      }
+    organization = "terraform-learn-zelar"
+
+    workspaces {
+      name = "Example-workspace"
+    }
   }
   required_providers {
     aws = {
