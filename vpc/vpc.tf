@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    bucket_id = aws_s3_bucket.bucketzelar.id
+    bucket_id = aws_s3_bucket.bucketzelar1.id
     key = "Space/s3/terraform.tfstate"
     region = "us-east-1"
   }
@@ -18,7 +18,7 @@ provider "aws" {
   region     = "us-east-1"
 }
 
-resource "aws_s3_bucket" "bucketzelar" {
+resource "aws_s3_bucket" "bucketzelar1" {
   bucket = "davidpavan"
 }
 
