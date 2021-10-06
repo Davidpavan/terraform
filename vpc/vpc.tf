@@ -17,6 +17,11 @@ terraform {
 provider "aws" {
   region     = "us-east-1"
 }
+
+resource "aws_s3_bucket" "bucketzelar" {
+  bucket = "davidpavan"
+}
+
 # Create VPC
 # terraform aws create vpc
 resource "aws_vpc" "vpc" {
