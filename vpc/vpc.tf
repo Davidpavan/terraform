@@ -1,10 +1,8 @@
 terraform {
-  backend "remote" {
-    organization = "terraform-learn-zelar"
-
-    workspaces {
-      name = "Example-workspace"
-    }
+  backend "s3" {
+    bucket = "terraform-state-david"
+    key = "global/s3/terraform.tfstate"
+    region = "us-east-1"
   }
   required_providers {
     aws = {
