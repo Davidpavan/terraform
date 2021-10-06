@@ -9,7 +9,7 @@ terraform {
 
 provider "google" {
 
-  credentials = file("C:\Users\new\imperial-ally-328216-0a85dcd14543.json")
+  credentials = file("C:/Users/new/imperial-ally-328216-0a85dcd14543.json")
   project = "imperial-ally-328216"
   region  = "us-central1"
   zone    = "us-central1-c"
