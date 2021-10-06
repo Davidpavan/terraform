@@ -15,7 +15,7 @@ provider "google" {
   zone    = "us-central1-c"
 }
 resource "google_compute_instance" "vm_instance" {
-  name         = "terraform-instance"
+  name         = "terraform-0"
   machine_type = "f1-micro"
 
   boot_disk {
