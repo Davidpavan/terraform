@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
-    bucket = "terraform-state-davidpavan"
-    key = "global/s3/terraform.tfstate"
+    bucket = "davidpavan"
+    key = "Space/s3/terraform.tfstate"
     region = "us-east-1"
   }
   required_providers {
