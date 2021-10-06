@@ -12,7 +12,7 @@ provider "google" {
   credentials = file("C:/Users/new/imperial-ally-328216-0a85dcd14543.json")
   project = "imperial-ally-328216"
   region  = "us-central1"
-  zone    = "us-central1c"
+  zone    = "us-central1-c"
 }
 resource "google_compute_instance" "vm_instance" {
   name         = "terraform-instance"
