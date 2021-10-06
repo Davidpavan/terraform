@@ -15,7 +15,8 @@ terraform {
 }
 
 provider "aws" {
-  region     = "us-east-1"
+  region                  = "us-east-1"
+  profile                 = "MyAws"
 }
 # Create VPC
 # terraform aws create vpc
