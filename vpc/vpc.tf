@@ -137,8 +137,8 @@ resource "aws_route_table" "private-route-table" {
   vpc_id       = aws_vpc.vpc.id
 
   route {
-    cidr_block = "0.0.0.0/0"
-    gateway_id = aws_internet_gateway.internet-gateway.id
+    cidr_block = "192.168.4.0/24"
+    gateway_id = aws_nat_gateway.Nat-1.id
   }
 
   tags       = {
