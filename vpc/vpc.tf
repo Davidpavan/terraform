@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    bucket_id = aws_s3_bucket.bucketzelar1.id
+    bucket_id = "davidpavan"
     key = "Space/s3/terraform.tfstate"
     region = "us-east-1"
   }
@@ -17,11 +17,6 @@ terraform {
 provider "aws" {
   region     = "us-east-1"
 }
-
-resource "aws_s3_bucket" "bucketzelar1" {
-  bucket = "davidpavan"
-}
-
 # Create VPC
 # terraform aws create vpc
 resource "aws_vpc" "vpc" {
