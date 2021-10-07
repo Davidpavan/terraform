@@ -16,7 +16,8 @@ terraform {
 
 provider "aws" {
   region                  = "us-east-1"
-  profile                 = "MyAws"
+  shared_credentials_file = "/Users/new/.aws/credentials"
+  profile                 = "MYAWS"
 }
 # Create VPC
 # terraform aws create vpc
